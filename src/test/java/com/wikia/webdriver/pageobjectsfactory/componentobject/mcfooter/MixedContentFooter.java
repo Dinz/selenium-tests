@@ -1,6 +1,5 @@
 package com.wikia.webdriver.pageobjectsfactory.componentobject.mcfooter;
 
-import com.wikia.webdriver.common.contentpatterns.URLsContent;
 import com.wikia.webdriver.common.logging.PageObjectLogging;
 import com.wikia.webdriver.pageobjectsfactory.pageobject.FandomPageObject;
 import com.wikia.webdriver.pageobjectsfactory.pageobject.WikiBasePageObject;
@@ -44,7 +43,7 @@ public class MixedContentFooter extends WikiBasePageObject {
   private WebElement wikiVideoCard;
 
   public MixedContentFooter openWikiMainPage() {
-    getUrl(getWikiUrl() + URLsContent.WIKI_DIR);
+    getUrl(getWikiUrl() + "?noads=1");
     PageObjectLogging.log("WikiPageOpened", "Wiki page is opened", true);
 
     return this;
